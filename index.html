@@ -10,12 +10,27 @@
         --color-clifford: #da373d;
       }
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.css" />
+
+    <style>
+      @font-face {
+        font-family: "Bosch";
+        src: url("./assets/Bosch.otf") format("opentype");
+      }
+
+      .bosch-font {
+        font-family: "Bosch", serif;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.css"
+    />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav
-      class="w-full h-15 bg-amber-950 z-50 fixed top-0 left-0 opacity-70 flex justify-between items-center text-white p-14"
+      id="nav1"
+      class="w-full h-16 bg-amber-950 z-50 fixed top-0 left-0 opacity-50 flex justify-between items-center text-white px-14"
     >
       <div>
         <p>This Is A Navbar</p>
@@ -27,10 +42,10 @@
     </nav>
 
     <div
-      class="bg-amber-600 text-white h-screen w-full flex justify-center items-center text-4xl"
+      class="bg-orange-900 text-white h-screen w-full flex justify-center items-center text-4xl"
     >
       <p class="hover:text-9xl transition-all duration-700 cursor-pointer">
-        Jason Bergh
+        <i>J</i>ason <i>B</i>ergh
       </p>
     </div>
     <div class="bg-amber-800 text-white h-screen flex flex-col">
@@ -87,17 +102,137 @@
     <div
       class="bg-amber-950 text-white h-screen w-full flex justify-center items-center text-4xl"
     >
-      <p class="text-5xl" data-aos="zoom-in-out" data-aos-duration="3000">Jason Bergh</p>
+      <p class="text-5xl" data-aos="zoom-in-out" data-aos-duration="3000">
+        <i>J</i>ason <i>B</i>ergh
+      </p>
     </div>
 
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init();</script>
+    <nav
+      id="nav2"
+      class="fixed top-0 left-0 w-full h-16 bg-black text-white bosch-font flex items-center justify-center text-xl opacity-0 pointer-events-none transition-all duration-500 z-50"
+    >
+      Art Is the Light Of Forgotten Ages.
+    </nav>
 
-<!-- Lenis -->
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.min.js"></script>
+    <div
+      id="taglineSection"
+      class="w-full h-24 bg-black text-white bosch-font text-5xl flex items-center justify-center"
+    >
+      <h1>
+        <span data-aos="fade-up" data-aos-delay="0">Art</span>
+        <span data-aos="fade-up" data-aos-delay="300">Is</span>
+        <span data-aos="fade-up" data-aos-delay="600">The</span>
+        <span data-aos="fade-up" data-aos-delay="900">Light</span>
+        <span data-aos="fade-up" data-aos-delay="1200">Of</span>
+        <span data-aos="fade-up" data-aos-delay="1500">Forgotten</span>
+        <span data-aos="fade-up" data-aos-delay="1800">Ages</span>
+        <span data-aos="fade-up" data-aos-delay="2100">.</span>
+      </h1>
+    </div>
 
-<!-- your script -->
-<script src="app.js"></script>
+    <div
+      class="bg-zinc-700 text-white h-screen w-full flex justify-center items-center flex flex-col"
+    >
+      <div class="flex justify-between w-full px-30">
+        <div
+          class="h-4 w-4 bg-white rounded-full"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        ></div>
+        <div
+          class="h-4 w-4 bg-white rounded-full"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        ></div>
+      </div>
+
+      <div>
+        <p
+          class="cursor-pointer text-7xl bosch-font font-medium"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <i>L</i>ord <i>F</i>rederic <i>L</i>eighton
+        </p>
+      </div>
+
+      <p
+        class="text-2xl bosch-font font-medium pt-10 px-100 text-center"
+        data-aos="zoom-in-out"
+        data-aos-duration="2000"
+      >
+        Lord Frederic Leighton stands as a master of light, form, and classical
+        grace—an artist who turned canvas into something almost divine. A
+        leading figure of Victorian classicism, Frederic Leighton painted not
+        just scenes, but ideals—bodies sculpted in perfection, draped in myth,
+        glowing with a timeless stillness. His work bridges the earthly and the
+        eternal, where ancient Greece breathes again through soft gold hues and
+        flawless composition. In Leighton’s world, beauty is not fleeting—it is
+        disciplined, deliberate, and immortal, captured in a moment that refuses
+        to fade.
+      </p>
+    </div>
+    <div class="relative flex justify-center">
+      <img
+        src="assets/Lord_Frederic_Leighton_-_Winding_the_skein_-_Google_Art_ProjectFXD.jpg"
+        class="absolute top-0 -translate-y-10 h-[600px]"
+      />
+    </div>
+    <div
+      class="bg-zinc-400 text-white h-screen w-full flex justify-center items-center text-4xl"
+    >
+      <div class="absolute mt-100">
+        <p class="text-[250px] bosch-font font-medium pt-10">
+          <span data-aos="fade-up" data-aos-duration="2000">Winding the</span>
+          <span data-aos="fade-up" data-aos-duration="3000">
+             Skein
+          </span>
+        </p>
+      </div>
+      <div>
+        <p class="bosch-font text-red-700 text-lg absolute mt-118">
+          “An idyll of hushed moments and sunlit grace.”
+        </p>
+      </div>
+    </div>
+    <div class="relative flex justify-center">
+      <p
+        class="absolute z-2 text-center mt-60 text-white bosch-font"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        Idyll by Frederic Leighton
+      </p>
+      <img
+        src="assets/idyll-reproduction-leighton (1).jpg"
+        class="absolute top-0 h-[600px]"
+      />
+    </div>
+    <div
+      class="bg-red-950 text-white h-screen w-full flex justify-center items-center text-4xl"
+    >
+      <div class="absolute mt-150">
+        <p class="text-6xl bosch-font font-normal opacity-70 pt-10">
+          <span data-aos="fade-left" data-aos-duration="3000">“What mere humans</span>
+          <span data-aos="fade-right" data-aos-duration="3000">make does falls short.”</span>
+           
+        </p>
+      </div>
+    </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        offset: 0,
+      });
+    </script>
+
+    <!-- Lenis -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.min.js"></script>
+
+    <!-- your script -->
+    <script src="app.js"></script>
   </body>
 </html>
